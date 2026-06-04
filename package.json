@@ -31,7 +31,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "p5": "^2.2.3"
+    "p5": "^2.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
