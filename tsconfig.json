@@ -17,8 +17,8 @@
 
     /* Libraries */
     "lib": [
-      "es2022",
-      "dom"
+      "dom",
+      "es2022"
     ],
 
     /* Emit */
