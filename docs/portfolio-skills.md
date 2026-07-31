@@ -16,7 +16,7 @@ This page is a technical record of the skills, tools, and engineering practices 
 ## Project Overview
 
 The p5.js TypeScript Template with webpack is a starter repository for using p5.js with TypeScript and webpack.
-The project is maintained at [blwatkins/npm-typescript-package-template](https://github.com/blwatkins/p5-webpack-typescript-template).
+The project is maintained at [blwatkins/p5-webpack-typescript-template](https://github.com/blwatkins/npm-typescript-package-template).
 
 ## At a Glance
 
