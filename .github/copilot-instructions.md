@@ -22,7 +22,7 @@ When starting a new project from this template, update the following before rely
 - **Portfolio Page Generation and Maintenance** — replace the project name and repository URL in the prompt template's Context block
 - **npm Scripts** and **GitHub Actions CI** — prune entries for any scripts or workflows the new project does not keep
 
-Guidance that is intentionally project-independent — Markdown Formatting, Documentation Comment Preferences, the portfolio highlight selection criteria, and the Pre-Merge and Release Review process — should carry over unchanged.
+Guidance that is intentionally project-independent — Markdown Formatting, the portfolio highlight selection criteria, and the Pre-Merge and Release Review process — should carry over unchanged.
 
 ## Tech Stack
 

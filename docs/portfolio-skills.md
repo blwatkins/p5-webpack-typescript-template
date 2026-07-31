@@ -16,7 +16,7 @@ This page is a technical record of the skills, tools, and engineering practices 
 ## Project Overview
 
 The p5.js TypeScript Template with webpack is a starter repository for using p5.js with TypeScript and webpack.
-The project is maintained at [blwatkins/p5-webpack-typescript-template](https://github.com/blwatkins/npm-typescript-package-template).
+The project is maintained at [blwatkins/p5-webpack-typescript-template](https://github.com/blwatkins/p5-webpack-typescript-template).
 
 ## At a Glance
 
@@ -25,7 +25,7 @@ The project is maintained at [blwatkins/p5-webpack-typescript-template](https://
 - **Primary Runtime:** Node.js
 - **Rendering Library:** p5.js
 - **Build Pipeline:** webpack
-- **Quality Controls:** ESLint
+- **Quality Controls:** ESLint, strict TypeScript compiler options
 - **Automation:** GitHub Actions
 - **Hosting & Deployment:** GitHub Pages
 - **Dependency Automation:** Dependabot
@@ -34,17 +34,16 @@ The project is maintained at [blwatkins/p5-webpack-typescript-template](https://
 
 ## Skills and Tooling Inventory
 
-- **Languages:** [TypeScript](https://www.typescriptlang.org/), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS),  [Markdown](https://www.markdownguide.org/), [YAML](https://yaml.org/)
+- **Languages:** [TypeScript](https://www.typescriptlang.org/), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), [Markdown](https://www.markdownguide.org/), [YAML](https://yaml.org/)
 - **Runtime:** [Node.js](https://nodejs.org/en)
 - **Libraries:** [p5.js](https://p5js.org/)
 - **Build / Bundling:** [webpack](https://webpack.js.org/)
 - **Code Quality:** [ESLint](https://eslint.org/)
-- **Documentation:** [TypeDoc](https://typedoc.org/)
-- **Site Generation:** [Bundler](https://bundler.io/), [Jekyll](https://jekyllrb.com/), [Liquid](https://shopify.github.io/liquid/), [Minima](https://github.com/jekyll/minima)
-- **Dependency Management:** [npm](https://www.npmjs.com/)
+- **Site Generation:** [Jekyll](https://jekyllrb.com/), [Liquid](https://shopify.github.io/liquid/), [Minima](https://github.com/jekyll/minima)
+- **Dependency Management:** [npm](https://www.npmjs.com/), [Bundler](https://bundler.io/)
 - **Versioning & Platform:** [Git](https://git-scm.com/), [GitHub](https://github.com/)
 - **Automation:** [GitHub Actions](https://github.com/features/actions)
-- **Hosting & Deployment:** [GitHub Pages](https://docs.github.com/en/pages), [npm package registry](https://www.npmjs.com/), [GitHub package registry](https://docs.github.com/en/packages)
+- **Hosting & Deployment:** [GitHub Pages](https://docs.github.com/en/pages)
 - **Code Analysis / Security:** [CodeQL](https://codeql.github.com/)
 - **Dependency Automation:** [Dependabot](https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-version-updates)
 - **Environment Configuration:** Node.js version pinning via `.node-version`, plus Ruby version pinning for the Jekyll/Bundler docs site via `docs/.ruby-version`
@@ -112,7 +111,7 @@ Evidence:
 
 ### Automated Documentation Site Delivery
 
-The [`docs/`](https://github.com/blwatkins/p5-webpack-typescript-template/tree/main/docs) directory is a Jekyll site with a locked Gemfile, a custom post layout that renders authorship, publication and modification dates, and a generated table of contents, and theme overrides for the site head and footer.
+The [`docs/`](https://github.com/blwatkins/p5-webpack-typescript-template/tree/main/docs) directory is a Jekyll site with a committed Gemfile and lockfile, a custom post layout that renders authorship, publication and modification dates, and a generated table of contents, and theme overrides for the site head and footer.
 A GitHub Actions workflow builds that site against the Pages base path and deploys it as a Pages artifact, using a single non-cancelling concurrency group so that a queued run cannot interrupt a deployment in progress.
 
 Evidence:
@@ -121,6 +120,7 @@ Evidence:
 - [`docs/_config.yml`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/docs/_config.yml)
 - [`docs/_layouts/post.html`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/docs/_layouts/post.html)
 - [`docs/Gemfile`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/docs/Gemfile)
+- [`docs/Gemfile.lock`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/docs/Gemfile.lock)
 
 ### Continuous Security Analysis
 
