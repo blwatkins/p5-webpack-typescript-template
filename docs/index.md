@@ -7,6 +7,10 @@ layout: page
 
 A template project for using p5.js with TypeScript and webpack.
 
+## Quickstart
+
+[Quickstart Guide](./quickstart.md)
+
 ## License
 
 The source code of this project is licensed under the [MIT License](https://opensource.org/license/mit).
@@ -14,23 +18,23 @@ The full text of the license is included with the project source code.
 
 ## Project Status Badges
 
-### [GitHub](https://github.com/blwatkins/npm-typescript-package-template)
+### [GitHub](https://github.com/blwatkins/p5-webpack-typescript-template)
 
-![GitHub License](https://badgen.net/github/license/blwatkins/npm-typescript-package-template)
-![GitHub Dependabot](https://badgen.net/github/dependabot/blwatkins/npm-typescript-package-template)
-![GitHub Last Commit](https://badgen.net/github/last-commit/blwatkins/npm-typescript-package-template)
-![GitHub Commits](https://badgen.net/github/commits/blwatkins/npm-typescript-package-template)
-![GitHub Commit Activity](https://img.shields.io/github/commit-activity/y/blwatkins/npm-typescript-package-template)
-![GitHub Code Size in Bytes](https://img.shields.io/github/languages/code-size/blwatkins/npm-typescript-package-template)
-![GitHub Repo Size](https://img.shields.io/github/repo-size/blwatkins/npm-typescript-package-template)
-![GitHub Repo File or Directory Count](https://img.shields.io/github/directory-file-count/blwatkins/npm-typescript-package-template)
-![GitHub Language Count](https://img.shields.io/github/languages/count/blwatkins/npm-typescript-package-template)
+![GitHub License](https://badgen.net/github/license/blwatkins/p5-webpack-typescript-template)
+![GitHub Dependabot](https://badgen.net/github/dependabot/blwatkins/p5-webpack-typescript-template)
+![GitHub Last Commit](https://badgen.net/github/last-commit/blwatkins/p5-webpack-typescript-template)
+![GitHub Commits](https://badgen.net/github/commits/blwatkins/p5-webpack-typescript-template)
+![GitHub Commit Activity](https://img.shields.io/github/commit-activity/y/blwatkins/p5-webpack-typescript-template)
+![GitHub Code Size in Bytes](https://img.shields.io/github/languages/code-size/blwatkins/p5-webpack-typescript-template)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/blwatkins/p5-webpack-typescript-template)
+![GitHub Repo File or Directory Count](https://img.shields.io/github/directory-file-count/blwatkins/p5-webpack-typescript-template)
+![GitHub Language Count](https://img.shields.io/github/languages/count/blwatkins/p5-webpack-typescript-template)
 
 ### GitHub Actions
 
-![CodeQL](https://github.com/blwatkins/npm-typescript-package-template/actions/workflows/codeql.yml/badge.svg)
-![npm Validate](https://github.com/blwatkins/npm-typescript-package-template/actions/workflows/npm-validate.yml/badge.svg)
-![Deploy GitHub Pages with Jekyll](https://github.com/blwatkins/npm-typescript-package-template/actions/workflows/gh-pages-jekyll.yml/badge.svg)
+![CodeQL](https://github.com/blwatkins/p5-webpack-typescript-template/actions/workflows/codeql.yml/badge.svg)
+![npm Validate](https://github.com/blwatkins/p5-webpack-typescript-template/actions/workflows/npm-validate.yml/badge.svg)
+![Deploy GitHub Pages with Jekyll](https://github.com/blwatkins/p5-webpack-typescript-template/actions/workflows/gh-pages-jekyll.yml/badge.svg)
 
 ## Sources and Technical Notes
 
