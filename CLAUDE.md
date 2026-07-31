@@ -1,0 +1,44 @@
+# CLAUDE.md
+
+Guidance for Claude Code (and other AI assistants) when working in this repository.
+
+## Canonical Instructions
+
+The detailed, authoritative conventions for this project live in [`.github/copilot-instructions.md`](./.github/copilot-instructions.md); read that file first.
+This document is a concise map; `.github/copilot-instructions.md` is the source of truth.
+
+## Keep These Two Files in Sync
+
+This repository maintains both `CLAUDE.md` and `.github/copilot-instructions.md`.
+When you update guidance in one file that also applies to the other, mirror the change so the two stay consistent.
+Updates to `CLAUDE.md` should be reflected, when appropriate, in `.github/copilot-instructions.md`, and vice versa.
+
+## Project Summary
+
+A template project for using p5.js with TypeScript and webpack.
+
+## npm Commands
+
+See the ["npm Scripts" section of `.github/copilot-instructions.md`](./.github/copilot-instructions.md#npm-scripts) for the full list of available commands.
+
+## Generated Output Directories (not committed)
+
+`_dist/` (build) and `_compiled/` (TypeScript `outDir`) are generated and gitignored.
+
+## Documentation Notes
+
+- Keep shared content between `README.md` and `docs/index.md` consistent; expected differences
+  (front matter, headings, footer/links) are documented in `.github/copilot-instructions.md`.
+- The portfolio skills page (`docs/portfolio-skills.md`) and its generation/review workflow are
+  described in the "Portfolio Page Generation and Maintenance" section of
+  `.github/copilot-instructions.md`.
+- Markdown indentation rules for all repository `.md` files are in the ["Markdown Formatting" section of `.github/copilot-instructions.md`](./.github/copilot-instructions.md#markdown-formatting).
+
+## Pre-Merge and Release Review
+
+Before merging a branch, complete these review steps (full details in the ["Pre-Merge and Release Review" section of `.github/copilot-instructions.md`](./.github/copilot-instructions.md#pre-merge-and-release-review)):
+
+1. **Validation** — `npm ci`, then `npm run validate` (lint and build) passes cleanly
+2. **Portfolio skills page** — review `docs/portfolio-skills.md` for accuracy; update `modified_date` if content changes
+3. **Instruction file sync** — `CLAUDE.md` and `copilot-instructions.md` are consistent and current
+4. **Branch code review** — convention compliance (static class pattern, copyright headers, README/docs sync), code quality (correctness, API consistency, efficiency, reuse/DRY), and consistency (cross-source consistency across code/comments/docs, implicit pattern detection with maintainer notification)

@@ -32,6 +32,7 @@ export default defineConfig([
     globalIgnores([
         '_compiled/**',
         '_dist/**',
+        'docs/_site/**',
         '**/*.js',
         '**/*.cjs',
         '**/*.mjs',

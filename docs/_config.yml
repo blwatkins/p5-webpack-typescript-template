@@ -1,0 +1,52 @@
+# Minima theme configuration
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
+  - jekyll-github-metadata
+  - jekyll-seo-tag
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-toc
+  - jekyll-gfm-admonitions
+
+# valid social icon names can be found at https://fontawesome.com/search?ic=brands
+
+minima:
+  skin: auto
+  hide_site_feed_link: true
+  show_excerpts: false
+  social_links:
+    - title: "Source Code"
+      icon: git-alt
+      url: "https://github.com/blwatkins/p5-webpack-typescript-template"
+    - title: "GitHub Pages"
+      icon: square-github
+      url: "https://blwatkins.github.io/"
+    - title: GitHub
+      icon: github
+      url: "https://github.com/blwatkins"
+    - title: YouTube
+      icon: youtube
+      url: "https://www.youtube.com/channel/UCeJ-huUU2AWP0z4-HWr1BXQ"
+    - title: LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/brittni-watkins/"
+  nav_pages:
+    - index.md
+
+title: "p5.js TypeScript Template with webpack"
+description: "A template project for using p5.js with TypeScript and webpack."
+show_downloads: true
+
+sass:
+  quiet_deps: true
+
+exclude:
+  - .ruby-version
+  - Gemfile
+  - Gemfile.lock
+  - vendor

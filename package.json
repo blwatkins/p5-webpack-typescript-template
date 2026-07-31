@@ -17,36 +17,37 @@
   },
   "type": "module",
   "engines": {
-    "node": "^20.19.0 || ^22.13.0 || >=24"
+    "node": "^22.23.0 || >=24"
   },
   "scripts": {
-    "build": "webpack --mode production",
-    "serve": "webpack-dev-server --mode production",
-    "build:dev": "webpack --mode development",
-    "serve:dev": "webpack-dev-server --mode development",
-    "build:check": "npm run build:dev && npm run build",
     "lint:js": "eslint -c eslint.config.js.mjs .",
     "lint:ts": "eslint -c eslint.config.ts.mjs .",
     "lint:all": "npm run lint:js && npm run lint:ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:check": "npm run build:dev && npm run build",
+    "serve": "webpack-dev-server --mode production",
+    "dev": "webpack-dev-server --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "npm run lint:all && npm run build:check"
   },
   "dependencies": {
-    "p5": "^2.3.0"
+    "p5": "^2.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "css-loader": "^7.1.4",
-    "eslint": "^10.6.0",
-    "eslint-plugin-es-x": "^9.7.0",
-    "globals": "^17.7.0",
-    "html-webpack-plugin": "^5.6.7",
+    "eslint": "^10.8.0",
+    "eslint-plugin-es-x": "^10.0.0",
+    "globals": "^17.8.0",
+    "html-webpack-plugin": "^5.6.8",
     "mini-css-extract-plugin": "^2.10.2",
     "ts-loader": "^9.6.2",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.62.1",
-    "webpack": "^5.108.3",
-    "webpack-cli": "^7.1.0",
-    "webpack-dev-server": "^5.2.5"
+    "typescript-eslint": "^8.65.0",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2",
+    "webpack-dev-server": "^6.0.0"
   }
 }
