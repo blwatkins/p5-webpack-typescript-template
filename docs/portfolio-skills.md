@@ -101,13 +101,12 @@ Evidence:
 ### Single-Command Validation Gate
 
 The `validate` script runs both lint configurations and then both the development and production builds in sequence, so a passing run exercises both webpack modes rather than only the one a developer happens to use.
-Continuous integration invokes that same script on pushes and pull requests to the default branch, across a matrix of the Node.js release lines declared in the package `engines` field.
+Continuous integration invokes that same script on pushes and pull requests to the default branch, across a matrix of Node.js release lines defined in the workflow matrix.
 
 Evidence:
 
 - [`package.json`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/package.json)
 - [`.github/workflows/npm-validate.yml`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/.github/workflows/npm-validate.yml)
-- [`.node-version`](https://github.com/blwatkins/p5-webpack-typescript-template/blob/main/.node-version)
 
 ### Automated Documentation Site Delivery
 
