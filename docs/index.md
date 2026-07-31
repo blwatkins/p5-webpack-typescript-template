@@ -1,0 +1,57 @@
+---
+title: "p5.js TypeScript Template with webpack"
+layout: page
+---
+
+## About This Project
+
+A template project for using p5.js with TypeScript and webpack.
+
+## License
+
+The source code of this project is licensed under the [MIT License](https://opensource.org/license/mit).
+The full text of the license is included with the project source code.
+
+## Project Status Badges
+
+### [GitHub](https://github.com/blwatkins/npm-typescript-package-template)
+
+![GitHub License](https://badgen.net/github/license/blwatkins/npm-typescript-package-template)
+![GitHub Dependabot](https://badgen.net/github/dependabot/blwatkins/npm-typescript-package-template)
+![GitHub Last Commit](https://badgen.net/github/last-commit/blwatkins/npm-typescript-package-template)
+![GitHub Commits](https://badgen.net/github/commits/blwatkins/npm-typescript-package-template)
+![GitHub Commit Activity](https://img.shields.io/github/commit-activity/y/blwatkins/npm-typescript-package-template)
+![GitHub Code Size in Bytes](https://img.shields.io/github/languages/code-size/blwatkins/npm-typescript-package-template)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/blwatkins/npm-typescript-package-template)
+![GitHub Repo File or Directory Count](https://img.shields.io/github/directory-file-count/blwatkins/npm-typescript-package-template)
+![GitHub Language Count](https://img.shields.io/github/languages/count/blwatkins/npm-typescript-package-template)
+
+### GitHub Actions
+
+![CodeQL](https://github.com/blwatkins/npm-typescript-package-template/actions/workflows/codeql.yml/badge.svg)
+![npm Validate](https://github.com/blwatkins/npm-typescript-package-template/actions/workflows/npm-validate.yml/badge.svg)
+![Deploy GitHub Pages with Jekyll](https://github.com/blwatkins/npm-typescript-package-template/actions/workflows/gh-pages-jekyll.yml/badge.svg)
+
+## Sources and Technical Notes
+
+- [Demonstrated Portfolio Skills](./portfolio-skills.md)
+
+## Attributions
+
+### Favicon
+
+The favicon for this template project is an artist palette emoji, which is used to represent creativity and artistic expression.
+The favicon was generated from the Artist Palette emoji using [Favicon Generator](https://favicon.io/).
+
+This favicon was generated using the following graphics from Twitter Twemoji:
+- Graphics Title: 1f3a8.svg
+- Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
+- Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f3a8.svg
+- Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+## Thank Yous
+
+A huge thank you to all the open source contributors who have made this project possible by creating and maintaining the libraries and tools used in this project, and to the open source community for fostering collaboration and innovation.
+
+A special thank you to all the educators, mentors, and content creators who have shared their knowledge and expertise in the fields of algorithmic art, web development, and computer science.
+Thank you for giving me the tools, resources, opportunities, support, and inspiration to learn and grow as a developer.
