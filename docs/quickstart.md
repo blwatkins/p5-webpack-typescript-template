@@ -47,10 +47,10 @@ This file will be used as the entry point for webpack.
 To test your sketch, navigate to the project directory in your terminal and run the following command:
 
 ```shell
-npm run serve:dev
+npm run dev
 ```
 
-`npm run serve:dev` will bundle the sketch in development mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
+`npm run dev` will bundle the sketch in development mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
 Development server settings can be found in `webpack.config.mjs` under the `devServer` configuration object.
 
 ### Other Available npm Scripts
@@ -62,7 +62,7 @@ Development server settings can be found in `webpack.config.mjs` under the `devS
 - `npm run build:dev` - bundle the sketch source code and dependencies with `webpack` in development mode
 - `npm run build:check` - run both build scripts in sequence
 - `npm run serve` - bundle the sketch in production mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
-- `npm run serve:dev` - bundle the sketch in development mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
+- `npm run dev` - bundle the sketch in development mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
 - `npm run test` - placeholder for future test scripts, if needed
 - `npm run validate` - run lint and build checks in sequence
 
