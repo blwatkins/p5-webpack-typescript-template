@@ -32,7 +32,7 @@
     "validate": "npm run lint:all && npm run build:check"
   },
   "dependencies": {
-    "p5": "^2.3.1"
+    "p5": "^2.3.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -40,12 +40,12 @@
     "css-loader": "^7.1.4",
     "eslint": "^10.8.0",
     "eslint-plugin-es-x": "^10.0.0",
-    "globals": "^17.8.0",
+    "globals": "^17.9.0",
     "html-webpack-plugin": "^5.6.8",
     "mini-css-extract-plugin": "^2.10.2",
     "ts-loader": "^9.6.2",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.65.0",
+    "typescript-eslint": "^8.66.0",
     "webpack": "^5.109.2",
     "webpack-cli": "^7.2.2",
     "webpack-dev-server": "^6.0.0"
