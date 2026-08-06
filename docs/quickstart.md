@@ -28,7 +28,7 @@ Alternatively, you can download the template source code as a ZIP file and extra
 
 ### Installing Dependencies
 
-Once you have created your new project, navigate to the project directory in your terminal and run the following command to install the required dependencies:
+Once you have created your new project, navigate to the project directory in your terminal and run the following command:
 
 ```shell
 npm install
@@ -41,6 +41,7 @@ npm install
 Source code for your sketches should be placed in the `src/` directory.
 The `src/sketch.ts` file provided contains a simple p5.js program with a black background and a white circle.
 This file will be used as the entry point for webpack.
+Webpack build settings can be found and edited in `webpack.config.mjs`.
 
 ### Testing the Sketch on a localhost Development Server
 
@@ -51,7 +52,7 @@ npm run dev
 ```
 
 `npm run dev` will bundle the sketch in development mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
-Development server settings can be found in `webpack.config.mjs` under the `devServer` configuration object.
+Webpack build settings and development server settings can be found and edited in `webpack.config.mjs`.
 
 ### Other Available npm Scripts
 
