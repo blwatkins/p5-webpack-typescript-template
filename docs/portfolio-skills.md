@@ -5,7 +5,7 @@ author:
   - Brittni Watkins
   - Claude Code
 date: 2026-07-31
-modified_date: 2026-07-31
+modified_date: 2026-08-06
 toc: true
 ---
 
@@ -30,7 +30,6 @@ The project is maintained at [blwatkins/p5-webpack-typescript-template](https://
 - **Hosting & Deployment:** GitHub Pages
 - **Dependency Automation:** Dependabot
 - **Security Analysis:** CodeQL
-- **Documentation Pattern:** Jekyll site under `docs/` (GitHub Pages) with repository instruction files for AI-assisted development
 
 ## Skills and Tooling Inventory
 
@@ -46,7 +45,7 @@ The project is maintained at [blwatkins/p5-webpack-typescript-template](https://
 - **Hosting & Deployment:** [GitHub Pages](https://docs.github.com/en/pages)
 - **Code Analysis / Security:** [CodeQL](https://codeql.github.com/)
 - **Dependency Automation:** [Dependabot](https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-version-updates)
-- **Environment Configuration:** Node.js version pinning via `.node-version`, plus Ruby version pinning for the Jekyll/Bundler docs site via `docs/.ruby-version`
+- **Environment Configuration:** Node.js version pinning via `.node-version`; Ruby version pinning for the Jekyll/Bundler docs site via `docs/.ruby-version`
 - **Development Environments:** [WebStorm](https://www.jetbrains.com/webstorm/), [Visual Studio Code](https://code.visualstudio.com/)
 - **AI-Assisted Development:** [GitHub Copilot](https://github.com/features/copilot), [Claude Code](https://code.claude.com/docs/en/overview)
 
