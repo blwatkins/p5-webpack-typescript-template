@@ -30,6 +30,7 @@ The project is maintained at [blwatkins/p5-webpack-typescript-template](https://
 - **Hosting & Deployment:** GitHub Pages
 - **Dependency Automation:** Dependabot
 - **Security Analysis:** CodeQL
+- **Documentation:** Jekyll site published with GitHub Pages
 
 ## Skills and Tooling Inventory
 
@@ -65,8 +66,7 @@ Each technical claim below is backed by a source link to the corresponding imple
 
 ### Strict TypeScript Compilation Contract
 
-The TypeScript configuration enables the full `strict` family alongside `noUnusedLocals`, `noUnusedParameters`, `noImplicitReturns`, `noImplicitOverride`, `noPropertyAccessFromIndexSignature`, `noFallthroughCasesInSwitch`, `allowUnreachableCode: false`, and `noEmitOnError`, targeting ES2022 with `moduleResolution: bundler`.
-Because webpack compiles the entry point through `ts-loader`, that same configuration governs every build the project produces rather than only editor-time type checking.
+The TypeScript configuration enables the full `strict` family and layers additional compiler checks on top of it — unused locals and parameters, implicit returns, unreachable code, and no emit on error — using bundler-oriented module resolution and a fixed language target shared with the lint configuration.
 
 Evidence:
 
@@ -76,8 +76,7 @@ Evidence:
 
 ### Layered, Type-Aware Lint Enforcement
 
-The repository ships two ESLint flat configurations: one scoped to JavaScript build tooling and one scoped to TypeScript sources.
-The TypeScript configuration composes `recommendedTypeChecked`, `strictTypeChecked`, and `stylisticTypeChecked` from typescript-eslint over `@stylistic` formatting rules, and both configurations apply `eslint-plugin-es-x` to restrict syntax to ES2022 so that lint enforcement and the compiler target agree.
+The TypeScript configuration layers typescript-eslint's type-checked recommended, strict, and stylistic rule sets over `@stylistic` formatting rules, and both configurations use `eslint-plugin-es-x` to restrict syntax to the same language level the compiler targets, so lint enforcement and the build agree.
 
 Evidence:
 
@@ -132,7 +131,7 @@ Evidence:
 ### Scheduled Multi-Ecosystem Dependency Automation
 
 Dependabot is configured for three ecosystems: npm at the repository root, GitHub Actions workflow dependencies, and Bundler dependencies under `docs/`.
-Production and development npm dependencies are grouped separately for both version and security updates, and each ecosystem carries its own commit-message prefix and labels so that update pull requests are routable on sight.
+npm updates are grouped by dependency type, so production and development changes arrive as separate pull requests, and each ecosystem carries its own commit-message prefix and labels so that update pull requests are routable on sight.
 
 Evidence:
 
