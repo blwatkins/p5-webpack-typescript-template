@@ -8,8 +8,10 @@ Provides an example source structure, build tooling, and GitHub automation for b
 ## Companion Instruction Files
 
 This repository maintains a companion `CLAUDE.md` at the repository root alongside this file.
-The two documents serve overlapping audiences and should stay consistent: when you update guidance in `.github/copilot-instructions.md` that also applies to `CLAUDE.md`, mirror the change there, and vice versa.
-`CLAUDE.md` is intentionally a concise pointer to this file; this file remains the canonical, detailed source of conventions.
+This file holds the guidance itself; `CLAUDE.md` is a map of where that guidance lives and does not repeat its rules.
+Add or change a convention here.
+A new convention placed under an existing section requires no change to `CLAUDE.md`.
+Update `CLAUDE.md` when the map changes: a new or renamed section that `CLAUDE.md` links to, or a change to the project summary, npm scripts, generated output directories, or the [Pre-Merge and Release Review](#pre-merge-and-release-review) step list.
 
 ## Using This File in a Project Created From This Template
 
@@ -22,7 +24,7 @@ When starting a new project from this template, update the following before rely
 - **Portfolio Page Generation and Maintenance** — replace the project name and repository URL in the prompt template's Context block
 - **npm Scripts** and **GitHub Actions CI** — prune entries for any scripts or workflows the new project does not keep
 
-Guidance that is intentionally project-independent — Markdown Formatting, the portfolio highlight selection criteria, and the Pre-Merge and Release Review process — should carry over unchanged.
+Everything else is intentionally project-independent and carries over unchanged, except where a section documents a tool or platform choice the new project does not keep.
 
 ## Tech Stack
 
@@ -158,8 +160,7 @@ Use `.md` relative links within `docs/` source files; the build process will con
 ## Security and Dependency Management
 
 - Dependabot is configured for monthly updates to npm dependencies, GitHub Actions workflows, and Bundler dependencies under `docs/`.
-- npm updates are grouped separately for production and development dependencies, across both version and security updates.
-- See the [GitHub Actions CI](#github-actions-ci) table for CodeQL analysis scope.
+- See the [GitHub Actions CI](#github-actions-ci) table for CodeQL analysis scope and npm publish authentication details.
 - The package is marked `"private": true` and is not published to a registry; there is no publish workflow or registry authentication to maintain.
 
 ## Validation
