@@ -66,7 +66,8 @@ Each technical claim below is backed by a source link to the corresponding imple
 
 ### Strict TypeScript Compilation Contract
 
-The TypeScript configuration enables the full `strict` family and layers additional compiler checks on top of it — unused locals and parameters, implicit returns, unreachable code, and no emit on error — using bundler-oriented module resolution and a fixed language target shared with the lint configuration.
+The TypeScript configuration enables the full `strict` family and layers additional compiler checks on top of it — unused locals and parameters, implicit returns, index-signature property access, unreachable code, and no emit on error — using bundler-oriented module resolution and a fixed language target shared with the lint configuration.
+Because webpack compiles the entry point through `ts-loader`, that same configuration governs every build the project produces rather than only editor-time type checking.
 
 Evidence:
 
@@ -76,6 +77,7 @@ Evidence:
 
 ### Layered, Type-Aware Lint Enforcement
 
+The repository ships two ESLint flat configurations: one scoped to JavaScript build tooling and one scoped to TypeScript sources.
 The TypeScript configuration layers typescript-eslint's type-checked recommended, strict, and stylistic rule sets over `@stylistic` formatting rules, and both configurations use `eslint-plugin-es-x` to restrict syntax to the same language level the compiler targets, so lint enforcement and the build agree.
 
 Evidence:
