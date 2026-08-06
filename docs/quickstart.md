@@ -4,7 +4,7 @@ layout: post
 author:
   - Brittni Watkins
 date: 2026-07-30
-modified_date: 2026-07-30
+modified_date: 2026-08-06
 toc: true
 ---
 
@@ -41,9 +41,11 @@ npm install
 Source code for your sketches should be placed in the `src/` directory.
 The `src/sketch.ts` file provided contains a simple p5.js program with a black background and a white circle.
 This file will be used as the entry point for webpack.
-Webpack build settings can be found and edited in `webpack.config.mjs`.
+The webpack build configuration lives in `webpack.config.mjs`.
 
-### Testing the Sketch on a localhost Development Server
+Production and development builds are written to the `_dist/` directory, which is generated and not committed.
+
+### Running the Sketch on a localhost Development Server
 
 To test your sketch, navigate to the project directory in your terminal and run the following command:
 
@@ -52,7 +54,7 @@ npm run dev
 ```
 
 `npm run dev` will bundle the sketch in development mode, start a localhost development server (`127.0.0.1:8080`), and open a new browser window for the `index.html` file bundled with the compiled sketch.
-Webpack build settings and development server settings can be found and edited in `webpack.config.mjs`.
+Development server settings live alongside the build configuration in `webpack.config.mjs`, under the `devServer` object.
 
 ### Other Available npm Scripts
 
@@ -64,7 +66,7 @@ Webpack build settings and development server settings can be found and edited i
 - `npm run build:check` - run both build scripts in sequence
 - `npm run serve` - bundle the sketch in production mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
 - `npm run dev` - bundle the sketch in development mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
-- `npm run test` - placeholder for future test scripts, if needed
+- `npm run test` - placeholder for future test scripts, if needed; the template ships no test runner, and the script exits with an error
 - `npm run validate` - run lint and build checks in sequence
 
 ## Resources and References
