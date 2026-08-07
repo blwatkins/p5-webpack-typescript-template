@@ -8,8 +8,9 @@ Provides an example source structure, build tooling, and GitHub automation for b
 ## Companion Instruction Files
 
 This repository maintains a companion `CLAUDE.md` at the repository root alongside this file.
-The two documents serve overlapping audiences and should stay consistent: when you update guidance in `.github/copilot-instructions.md` that also applies to `CLAUDE.md`, mirror the change there, and vice versa.
-`CLAUDE.md` is intentionally a concise pointer to this file; this file remains the canonical, detailed source of conventions.
+This file holds the guidance itself; `CLAUDE.md` is a map of where that guidance lives and does not repeat its rules.
+Add or change a convention here, not in `CLAUDE.md`; a new convention placed under an existing section requires no change to `CLAUDE.md`.
+Update `CLAUDE.md` when the map changes: a new or renamed section that `CLAUDE.md` links to, or a change to the project summary, npm scripts, generated output directories, or the [Pre-Merge and Release Review](#pre-merge-and-release-review) step list.
 
 ## Using This File in a Project Created From This Template
 
@@ -22,7 +23,7 @@ When starting a new project from this template, update the following before rely
 - **Portfolio Page Generation and Maintenance** — replace the project name and repository URL in the prompt template's Context block
 - **npm Scripts** and **GitHub Actions CI** — prune entries for any scripts or workflows the new project does not keep
 
-Guidance that is intentionally project-independent — Markdown Formatting, the portfolio highlight selection criteria, and the Pre-Merge and Release Review process — should carry over unchanged.
+Sections not listed above are project-independent and carry over unchanged, unless the new project drops the tool or platform they document.
 
 ## Tech Stack
 
@@ -44,8 +45,8 @@ Guidance that is intentionally project-independent — Markdown Formatting, the 
 - `npm run build:check` - run both build scripts in sequence
 - `npm run serve` - bundle the sketch in production mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
 - `npm run dev` - bundle the sketch in development mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
-- `npm run test` - placeholder for future test scripts; the template ships no test runner
-- `npm run validate` - run `lint:all` and `build:check` in sequence
+- `npm run test` - placeholder for a future test runner; the template ships none, and the script exits with an error until one is added
+- `npm run validate` - run lint and build checks in sequence
 
 This list is duplicated in [`docs/quickstart.md`](../docs/quickstart.md).
 When a script is added, removed, or renamed, update `package.json`, this section, and the quickstart guide together.
@@ -158,7 +159,6 @@ Use `.md` relative links within `docs/` source files; the build process will con
 ## Security and Dependency Management
 
 - Dependabot is configured for monthly updates to npm dependencies, GitHub Actions workflows, and Bundler dependencies under `docs/`.
-- npm updates are grouped separately for production and development dependencies, across both version and security updates.
 - See the [GitHub Actions CI](#github-actions-ci) table for CodeQL analysis scope.
 - The package is marked `"private": true` and is not published to a registry; there is no publish workflow or registry authentication to maintain.
 
@@ -202,7 +202,7 @@ Editing in place preserves whatever was true when the sections were written; enf
 
 Verify that `CLAUDE.md` and `.github/copilot-instructions.md` are consistent with each other and reflect the current project state:
 
-- Guidance shared between the two files is mirrored
+- `CLAUDE.md` still maps accurately to this file
 - The [Directory Structure section](#directory-structure) accurately reflects the current `src/` module layout
 - Any new tooling, conventions, or workflows introduced on the branch are documented
 
