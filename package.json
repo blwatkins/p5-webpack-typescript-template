@@ -26,7 +26,7 @@
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "build:check": "npm run build:dev && npm run build",
-    "serve": "webpack-dev-server --mode production",
+    "preview": "webpack-dev-server --mode production",
     "dev": "webpack-dev-server --mode development",
     "test": "echo \"Error: no test specified\" && exit 1",
     "validate": "npm run lint:all && npm run build:check"

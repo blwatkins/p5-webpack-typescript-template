@@ -19,7 +19,6 @@ When starting a new project from this template, update the following before rely
 
 - **Project Overview**, **Tech Stack**, and **Directory Structure** — replace with the new project's details
 - **File Headers** — replace the copyright holder name and starting year
-- **GitHub Repository Topics** — replace the repository link in that step with the new repository
 - **Portfolio Page Generation and Maintenance** — replace the project name and repository URL in the prompt template's Context block
 - **npm Scripts** and **GitHub Actions CI** — prune entries for any scripts or workflows the new project does not keep
 
@@ -43,8 +42,8 @@ Sections not listed above are project-independent and carry over unchanged, unle
 - `npm run build` - bundle the sketch source code and dependencies with `webpack` in production mode
 - `npm run build:dev` - bundle the sketch source code and dependencies with `webpack` in development mode
 - `npm run build:check` - run both build scripts in sequence
-- `npm run serve` - bundle the sketch in production mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
-- `npm run dev` - bundle the sketch in development mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
+- `npm run preview` - bundle the sketch in production mode, start a localhost development server, and open a new browser window
+- `npm run dev` - bundle the sketch in development mode, start a localhost development server, and open a new browser window
 - `npm run test` - placeholder for a future test runner; the template ships none, and the script exits with an error until one is added
 - `npm run validate` - run lint and build checks in sequence
 
@@ -539,7 +538,7 @@ When reviewing a new page, compare with existing template pages for:
 - label style and format in `Skills and Tooling Inventory` (flat bulleted list with bold category labels)
 - tense and sentence style
 - bullet punctuation consistency
-- naming conventions (`webpack` vs `Webpack`, etc.)
+- naming conventions (match each tool's own capitalization, e.g. `webpack`, `npm`, `Vite`, `ESLint`)
 
 Consistency boosts professionalism at portfolio scale.
 
