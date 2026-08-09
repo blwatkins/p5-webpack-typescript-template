@@ -14,7 +14,7 @@ This repository maintains both `CLAUDE.md` and `.github/copilot-instructions.md`
 `CLAUDE.md` is a map of where guidance lives; `.github/copilot-instructions.md` holds the guidance itself.
 Add or change a convention in `.github/copilot-instructions.md`.
 A new convention under an existing section requires no change here.
-Update `CLAUDE.md` when the map changes: a new or renamed section that `CLAUDE.md` links to, a change to the project summary, or a  change to the [Pre-Merge and Release Review](#pre-merge-and-release-review) step list.
+Update `CLAUDE.md` when the map changes: a new or renamed section in `.github/copilot-instructions.md` that this file links to, a change to the project summary, a change to the generated output directories, or a change to the [Pre-Merge and Release Review](./.github/copilot-instructions.md#pre-merge-and-release-review) step list.
 
 ## Project Summary
 

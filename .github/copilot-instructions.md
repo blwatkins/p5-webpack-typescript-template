@@ -10,7 +10,7 @@ Provides an example source structure, build tooling, and GitHub automation for b
 This repository maintains a companion `CLAUDE.md` at the repository root alongside this file.
 This file holds the guidance itself; `CLAUDE.md` is a map of where that guidance lives and does not repeat its rules.
 Add or change a convention here, not in `CLAUDE.md`; a new convention placed under an existing section requires no change to `CLAUDE.md`.
-Update `CLAUDE.md` when the map changes: a new or renamed section that `CLAUDE.md` links to, a change to the project summary, or a  change to the [Pre-Merge and Release Review](#pre-merge-and-release-review) step list.
+Update `CLAUDE.md` when the map changes: a new or renamed section that `CLAUDE.md` links to, a change to the project summary, a change to the generated output directories, or a change to the [Pre-Merge and Release Review](#pre-merge-and-release-review) step list.
 
 ## Using This File in a Project Created From This Template
 
@@ -154,6 +154,12 @@ Any addition, removal, or update to shared sections must be applied consistently
 The Jekyll build uses the `jekyll-relative-links` plugin (configured in `docs/_config.yml`), which automatically converts relative `.md` links in `docs/` markdown files to their rendered `.html` paths.
 For example, `./portfolio-skills.md` in `docs/index.md` resolves to `portfolio-skills.html` on the published site.
 Use `.md` relative links within `docs/` source files; the build process will convert them correctly.
+
+### Front Matter Dates
+
+Markdown pages that carry `date` and `modified_date` front matter render both values through `docs/_layouts/post.html` as "Published" and "Updated".
+When a branch changes the content of one of these pages, bump that page's `modified_date` to the commit date and leave the original `date` unchanged.
+A page whose content did not change keeps its existing `modified_date`.
 
 ## Security and Dependency Management
 
