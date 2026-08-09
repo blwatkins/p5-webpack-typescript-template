@@ -25,16 +25,16 @@ When the call is close, leave `CLAUDE.md` alone and let the ["Instruction File S
 
 ## Using This File in a Project Created From This Template
 
-This file ships with the template and is intended to be adapted, not copied verbatim.
+This file and its companion `CLAUDE.md` ship with the template and are intended to be adapted, not copied verbatim.
 When starting a new project from this template, update the following before relying on the guidance below:
 
 - **Project Overview**, **Tech Stack**, and **Directory Structure** — replace with the new project's details
 - **File Headers** — replace the copyright holder name and starting year
 - **Portfolio Page Generation and Maintenance** — replace the project name and repository URL in the prompt template's Context block
 - **npm Scripts** and **GitHub Actions CI** — prune entries for any scripts or workflows the new project does not keep
-- **Companion `CLAUDE.md`** — it ships with the template too. Rewrite anything it states in its own words (project summary, generated output directories, the review step list), and re-check every link it makes into this file, since sections renamed or pruned above will break its anchors.
+- **Companion `CLAUDE.md`** — rewrite anything the map states in its own words (project summary, generated output directories, the review step list), and re-check every link it makes into this file, since sections renamed or pruned above will break its anchors
 
-Sections not listed above are project-independent and carry over unchanged, unless the new project drops the tool or platform they document.
+Sections of this file not listed above are project-independent and carry over unchanged, unless the new project drops the tool or platform they document.
 
 ## Tech Stack
 
@@ -234,8 +234,8 @@ Review all branch changes for convention compliance and code quality.
 - All source code files should follow the conventions listed in the ["Development Guidelines" section](#development-guidelines) of this file.
 - Copyright year headers are present and accurate (see ["File Headers" section](#file-headers)).
 - `README.md` and `docs/index.md` are in sync for any shared content changes
-- Test coverage is complete and meaningful for all new or changed public API surface
 - `modified_date` is bumped on every page whose content changed on the branch (see the ["Front Matter Dates" section](#front-matter-dates))
+- Test coverage is complete and meaningful for all new or changed public API surface
 
 #### Code Quality
 

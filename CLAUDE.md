@@ -6,7 +6,7 @@ Guidance for Claude Code (and other AI assistants) when working in this reposito
 
 The detailed, authoritative conventions for this project live in [`.github/copilot-instructions.md`](./.github/copilot-instructions.md).
 Read that file before making any change to this repository, including documentation-only changes.
-This document is a map of what lives there; it does not repeat its rules.
+This document is a map of what lives there; it does not repeat its rules — the sync rule below is the deliberate exception, since an agent that opens only one of the two files still needs it.
 
 ## Keep These Two Files in Sync
 
