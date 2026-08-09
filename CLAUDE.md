@@ -36,6 +36,7 @@ See the ["npm Scripts" section of `.github/copilot-instructions.md`](./.github/c
   described in the "Portfolio Page Generation and Maintenance" section of
   `.github/copilot-instructions.md`.
 - Markdown indentation rules for all repository `.md` files are in the ["Markdown Formatting" section of `.github/copilot-instructions.md`](./.github/copilot-instructions.md#markdown-formatting).
+- Front matter `date` and `modified_date` rules for pages using `layout: post` are in the ["Front Matter Dates" section of `.github/copilot-instructions.md`](./.github/copilot-instructions.md#front-matter-dates).
 
 ## Pre-Merge and Release Review
 
