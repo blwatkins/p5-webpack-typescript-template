@@ -6,15 +6,25 @@ Guidance for Claude Code (and other AI assistants) when working in this reposito
 
 The detailed, authoritative conventions for this project live in [`.github/copilot-instructions.md`](./.github/copilot-instructions.md).
 Read that file before making any change to this repository, including documentation-only changes.
-This document is a map of what lives there; it does not repeat its rules.
+This document is a map of what lives there; it does not repeat its rules — the sync rule below is the deliberate exception, since an agent that opens only one of the two files still needs it.
 
 ## Keep These Two Files in Sync
 
 This repository maintains both `CLAUDE.md` and `.github/copilot-instructions.md`.
 `CLAUDE.md` is a map of where guidance lives; `.github/copilot-instructions.md` holds the guidance itself.
-Add or change a convention in `.github/copilot-instructions.md`.
-A new convention under an existing section requires no change here.
-Update `CLAUDE.md` when the map changes: a new or renamed section in `.github/copilot-instructions.md` that this file links to, or a change to the project summary, npm commands, generated output directories, or the review step list.
+Add or change a convention in `.github/copilot-instructions.md`, not here.
+
+This file carries two kinds of content: links into `.github/copilot-instructions.md`, and a small number of facts restated in its own words where a link would cost more than it saves.
+Update this file when a change there invalidates either kind:
+
+- **A link stops resolving** — a section this file links to is renamed, moved, or removed.
+- **A restated fact stops matching** — a summary, a name, or a list spelled out here rather than linked no longer matches `.github/copilot-instructions.md`.
+
+A new convention added under an existing section invalidates neither, and requires no change here.
+
+A new *section* in `.github/copilot-instructions.md` is the one case that needs judgment, since it is not yet linked from anywhere.
+Add it to the map only if a contributor would need to know the section exists before starting work; leave it off if they would find it by reading `.github/copilot-instructions.md` once they reach the work it governs.
+When the call is close, leave this file alone — an incomplete map costs less than a map that drifts into a second copy.
 
 ## Project Summary
 

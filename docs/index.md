@@ -9,7 +9,7 @@ A template project for using p5.js with TypeScript and webpack.
 
 ## Quickstart
 
-[Quickstart Guide](./quickstart.md)
+- [Quickstart Guide](./quickstart.md)
 
 ## License
 
