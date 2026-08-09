@@ -47,7 +47,7 @@ Production and development builds are written to the `_dist/` directory, which i
 
 ### Running the Sketch on a localhost Development Server
 
-To test your sketch, navigate to the project directory in your terminal and run the following command:
+To run your sketch, navigate to the project directory in your terminal and run the following command:
 
 ```shell
 npm run dev
@@ -64,8 +64,8 @@ Development server settings live alongside the build configuration in `webpack.c
 - `npm run build` - bundle the sketch source code and dependencies with `webpack` in production mode
 - `npm run build:dev` - bundle the sketch source code and dependencies with `webpack` in development mode
 - `npm run build:check` - run both build scripts in sequence
-- `npm run serve` - bundle the sketch in production mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
-- `npm run dev` - bundle the sketch in development mode, start a localhost development server, and open a new browser window for the `index.html` file bundled with the compiled sketch
+- `npm run preview` - bundle the sketch in production mode, start a localhost development server, and open a new browser window
+- `npm run dev` - bundle the sketch in development mode, start a localhost development server, and open a new browser window
 - `npm run test` - placeholder for a future test runner; the template ships none, and the script exits with an error until one is added
 - `npm run validate` - run lint and build checks in sequence
 
@@ -77,6 +77,10 @@ For additional information about the software and tools discussed in this guide,
 
 - [Node.js](https://nodejs.org/en/)
 - [npm](https://docs.npmjs.com/cli)
+
+### webpack
+
+- [webpack](https://webpack.js.org/)
 
 ### Text Editor and IDE Resources
 
