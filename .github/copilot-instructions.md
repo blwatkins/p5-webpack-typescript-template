@@ -157,7 +157,7 @@ Use `.md` relative links within `docs/` source files; the build process will con
 
 ### Front Matter Dates
 
-Markdown pages that carry `date` and `modified_date` front matter render both values through `docs/_layouts/post.html` as "Published" and "Updated".
+Markdown pages that use `layout: post` with `date` and `modified_date` front matter render both values through `docs/_layouts/post.html` as "Published" and "Updated", respectively.
 When a branch changes the content of one of these pages, bump that page's `modified_date` to the commit date and leave the original `date` unchanged.
 A page whose content did not change keeps its existing `modified_date`.
 
@@ -194,7 +194,7 @@ If anything changed, do the following:
 
 - Confirm `Capability Record` has 5–7 bullets and `Detailed Technical Notes` has one matching subsection per bullet
 - When a branch introduces a new capability or updates an existing capability, re-rank the highlights against the [selection criteria](#selecting-the-57-highlights) rather than appending; if the new capability ranks in the top 5–7, the lowest-ranked existing highlight comes off the page
-- Bump `modified_date` to today; do not change the original `date`
+- Bump `modified_date` per the ["Front Matter Dates" section](#front-matter-dates); do not change the original `date`
 - Evidence links must always point to the `main` branch
 
 Refer to the ["Portfolio Page Generation and Maintenance" section](#portfolio-page-generation-and-maintenance) for the full review checklist.
