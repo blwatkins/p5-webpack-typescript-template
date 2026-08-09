@@ -10,7 +10,7 @@ Provides an example source structure, build tooling, and GitHub automation for b
 This repository maintains a companion `CLAUDE.md` at the repository root alongside this file.
 This file holds the guidance itself; `CLAUDE.md` is a map of where that guidance lives and does not repeat its rules.
 Add or change a convention here, not in `CLAUDE.md`; a new convention placed under an existing section requires no change to `CLAUDE.md`.
-Update `CLAUDE.md` when the map changes: a new or renamed section that `CLAUDE.md` links to, or a change to the project summary, npm scripts, generated output directories, or the [Pre-Merge and Release Review](#pre-merge-and-release-review) step list.
+Update `CLAUDE.md` when the map changes: a new or renamed section that `CLAUDE.md` links to, a change to the project summary, or a  change to the [Pre-Merge and Release Review](#pre-merge-and-release-review) step list.
 
 ## Using This File in a Project Created From This Template
 

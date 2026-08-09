@@ -4,7 +4,7 @@ layout: post
 author:
   - Brittni Watkins
 date: 2026-07-30
-modified_date: 2026-08-06
+modified_date: 2026-08-08
 toc: true
 ---
 
@@ -78,7 +78,7 @@ For additional information about the software and tools discussed in this guide,
 - [Node.js](https://nodejs.org/en/)
 - [npm](https://docs.npmjs.com/cli)
 
-### webpack
+### webpack Resources
 
 - [webpack](https://webpack.js.org/)
 
