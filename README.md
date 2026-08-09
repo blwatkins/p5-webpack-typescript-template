@@ -6,7 +6,7 @@ A template project for using p5.js with TypeScript and webpack.
 
 ## Quickstart
 
-[Quickstart Guide](https://blwatkins.github.io/p5-webpack-typescript-template/quickstart.html)
+- [Quickstart Guide](https://blwatkins.github.io/p5-webpack-typescript-template/quickstart.html)
 
 ## License
 
