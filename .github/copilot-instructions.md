@@ -7,14 +7,12 @@ Provides an example source structure, build tooling, and GitHub automation for b
 
 ## Companion Instruction Files
 
-`CLAUDE.md` at the repository root holds no guidance of its own.
-It includes a one-line `@` import of this file, which Claude Code expands into context at session start; GitHub Copilot reads this file directly.
-Both agents read the same instruction set, so there is nothing to keep in sync and no need to restate conventions in `CLAUDE.md`.
-
 This file is the single source of every convention in this repository.
-Add or change a convention here; never add one to `CLAUDE.md`, and never summarize or link this file's sections from it.
+`CLAUDE.md` at the repository root contains a one-line `@` import of this file, which Claude Code expands into context at session start; GitHub Copilot reads this file directly.
+This means that both agents read the same instruction set, so there is no need to restate, summarize, or add conventions in `CLAUDE.md`.
 
-Keep JSDoc tags in this file inside backticks; Claude Code skips backticked and fenced content when parsing imports, but an unbackticked `@since` would be read as an import directive.
+Keep every `@`-prefixed token in this file inside backticks or a fenced block — JSDoc tags such as `@throws`, and scoped package names such as `@eslint/js` or `@stylistic/eslint-plugin`.
+Claude Code skips backticked and fenced content when parsing imports, but a bare `@since` or `@eslint/js` would be read as an import directive.
 
 ## Using This File in a Project Created From This Template
 
@@ -216,6 +214,7 @@ Verify that `.github/copilot-instructions.md` reflects the current project state
 - The [Tech Stack section](#tech-stack) matches the dependencies declared in `package.json`
 - The [Security and Dependency Management section](#security-and-dependency-management) matches `.github/dependabot.yml`
 - Any new tooling, conventions, or workflows introduced on the branch are documented
+- The `@` import at the top of `CLAUDE.md` still names this file's current path
 
 ### 4. Branch Code Review
 
