@@ -9,7 +9,7 @@ Provides an example source structure, build tooling, and GitHub automation for b
 
 This file is the single source of every convention in this repository.
 `CLAUDE.md` at the repository root contains a one-line `@` import of this file, which Claude Code expands into context at session start; GitHub Copilot reads this file directly.
-This means that both agents read the same instruction set, so there is no need to restate, summarize, or add conventions in `CLAUDE.md`.
+Both agents therefore read the same instruction set: add or change a convention here, and never restate, summarize, or add one in `CLAUDE.md`.
 
 Keep every `@`-prefixed token in this file inside backticks or a fenced block — JSDoc tags such as `@throws`, and scoped package names such as `@eslint/js` or `@stylistic/eslint-plugin`.
 Claude Code skips backticked and fenced content when parsing imports, but a bare `@since` or `@eslint/js` would be read as an import directive.
@@ -214,7 +214,6 @@ Verify that `.github/copilot-instructions.md` reflects the current project state
 - The [Tech Stack section](#tech-stack) matches the dependencies declared in `package.json`
 - The [Security and Dependency Management section](#security-and-dependency-management) matches `.github/dependabot.yml`
 - Any new tooling, conventions, or workflows introduced on the branch are documented
-- The `@` import at the top of `CLAUDE.md` still names this file's current path
 
 ### 4. Branch Code Review
 
