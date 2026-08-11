@@ -40,12 +40,9 @@ See the ["npm Scripts" section of `.github/copilot-instructions.md`](./.github/c
 
 ## Documentation Notes
 
-- Keep shared content between `README.md` and `docs/index.md` consistent; expected differences
-  (front matter, headings, footer/links) are documented in `.github/copilot-instructions.md`.
-- The portfolio skills page (`docs/portfolio-skills.md`) and its generation/review workflow are
-  described in the "Portfolio Page Generation and Maintenance" section of
-  `.github/copilot-instructions.md`.
-- Markdown indentation rules for all repository `.md` files are in the ["Markdown Formatting" section of `.github/copilot-instructions.md`](./.github/copilot-instructions.md#markdown-formatting).
+Documentation, the GitHub Pages site, and the portfolio skills page (`docs/portfolio-skills.md`) are governed by the ["Documentation and GitHub Pages"](./.github/copilot-instructions.md#documentation-and-github-pages) and ["Portfolio Page Generation and Maintenance"](./.github/copilot-instructions.md#portfolio-page-generation-and-maintenance) sections of `.github/copilot-instructions.md`.
+
+Markdown indentation rules for all repository `.md` files are in the ["Markdown Formatting" section of `.github/copilot-instructions.md`](./.github/copilot-instructions.md#markdown-formatting).
 
 ## Pre-Merge and Release Review
 

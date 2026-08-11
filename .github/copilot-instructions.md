@@ -17,6 +17,8 @@ Update `CLAUDE.md` when a change here invalidates either kind:
 - **A link stops resolving** — a section `CLAUDE.md` links to is renamed, moved, or removed.
 - **A restated fact stops matching** — a summary, a name, or a list that `CLAUDE.md` spells out rather than links to has changed here.
 
+Do not restate an open enumeration of the topics a linked section covers; such a list goes stale every time that section grows, and is the most common source of drift between the two files.
+
 A new convention added under an existing section invalidates neither, and requires no change to `CLAUDE.md`.
 
 A new *section* is the one case that needs judgment, since a new section is not yet linked from anywhere.
