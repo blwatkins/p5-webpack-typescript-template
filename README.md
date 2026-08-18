@@ -35,7 +35,7 @@ The full text of the license is included with the project source code.
 
 ## Sources and Technical Notes
 
-- [Demonstrated Portfolio Skills](https://blwatkins.github.io/p5-webpack-typescript-template/portfolio-skills.html)
+Coming soon!
 
 ## Attributions
 
