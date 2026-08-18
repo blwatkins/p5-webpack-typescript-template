@@ -6,9 +6,6 @@
 # Visual Studio Code
 .vscode/
 
-# Claude Code
-.claude/
-
 # Node.js and npm
 node_modules/
 
