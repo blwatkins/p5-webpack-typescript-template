@@ -83,7 +83,7 @@ GEM
       jekyll (>= 3.0, < 5.0)
     jekyll-relative-links (0.8.0)
       jekyll (>= 3.3, < 5.0)
-    jekyll-remote-theme (0.5.2)
+    jekyll-remote-theme (0.6.0)
       addressable (~> 2.0)
       jekyll (>= 3.5, < 5.0)
       jekyll-sass-converter (>= 1.0, < 4.0, != 2.0.0)
@@ -106,7 +106,7 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.4)
-    listen (3.10.0)
+    listen (3.10.1)
       logger
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -144,7 +144,7 @@ GEM
       ffi (~> 1.0)
     rexml (3.4.4)
     rouge (3.30.0)
-    rubyzip (3.4.1)
+    rubyzip (3.7.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -225,7 +225,7 @@ CHECKSUMS
   jekyll-minima (3.0.0.pre20220104) sha256=7f53d91519cffb203f2dbcaf2945eba225135e05d814d4b2d5f51b10bd856113
   jekyll-optional-front-matter (0.3.3) sha256=fc96976ffaa5515b3ad7d553199011aa98782c13694dfbd1a6278ede88212a6e
   jekyll-relative-links (0.8.0) sha256=128421fbe8d81b5c1319bd88ca8f6d60a070ed68dc31b78b7cc62c0455514163
-  jekyll-remote-theme (0.5.2) sha256=d41ba7358b7baa7c8f8f4ee03112bbae8dba90235e97d88c25b90a032abb6f55
+  jekyll-remote-theme (0.6.0) sha256=ac95a65f3cf3b357756ea8926958f97f078cf7f2e4cb0654a301f483e5cae31e
   jekyll-sass-converter (1.5.2) sha256=53773669e414dc3bb070113befacb808576025a28cfa4a4accc682e90a9c1101
   jekyll-seo-tag (2.9.0) sha256=0260015a8e1df9bf195cdfb0c675b7b2883fd8cbf12556e1c1cbe36a831c6852
   jekyll-titles-from-headings (0.5.4) sha256=d5e43a5690f1e5cf541543e33501def1346b34acca7ce740ab74484e5dd926b0
@@ -235,7 +235,7 @@ CHECKSUMS
   kramdown (2.5.2) sha256=1ba542204c66b6f9111ff00dcc26075b95b220b07f2905d8261740c82f7f02fa
   kramdown-parser-gfm (1.1.0) sha256=fb39745516427d2988543bf01fc4cf0ab1149476382393e0e9c48592f6581729
   liquid (4.0.4) sha256=4fcfebb1a045e47918388dbb7a0925e7c3893e58d2bd6c3b3c73ec17a2d8fdb3
-  listen (3.10.0) sha256=c6e182db62143aeccc2e1960033bebe7445309c7272061979bb098d03760c9d2
+  listen (3.10.1) sha256=4c3f32855657f348747da4dd2372ff3790d90a6b1d3e4f21a3706adb2d04783c
   logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
   mercenary (0.3.6) sha256=2a084b18f5692c86a633e185d5311ba6d11fc46c802eb414ae05368178078a82
   net-http (0.9.1) sha256=25ba0b67c63e89df626ed8fac771d0ad24ad151a858af2cc8e6a716ca4336996
@@ -257,7 +257,7 @@ CHECKSUMS
   rb-inotify (0.11.1) sha256=a0a700441239b0ff18eb65e3866236cd78613d6b9f78fea1f9ac47a85e47be6e
   rexml (3.4.4) sha256=19e0a2c3425dfbf2d4fc1189747bdb2f849b6c5e74180401b15734bc97b5d142
   rouge (3.30.0) sha256=a3d353222aa72e49e2c86726c0bcfd719f82592f57d494474655f48e669eceb6
-  rubyzip (3.4.1) sha256=0a79e745b5c25872ebd148457df5665da8530ed8626c993b01457128f173ca02
+  rubyzip (3.7.0) sha256=65c19294da75297a939006f3516deacc33185fbd721ff1954f7a231db6d3e121
   safe_yaml (1.0.5) sha256=a6ac2d64b7eb027bdeeca1851fe7e7af0d668e133e8a88066a0c6f7087d9f848
   sass (3.7.4) sha256=808b0d39053aa69068df939e24671fe84fd5a9d3314486e1a1457d0934a4255d
   sass-listen (4.0.0) sha256=ae9dcb76dd3e234329e5ba6e213f48e532c5a3e7b0b4d8a87f13aaca0cc18377
