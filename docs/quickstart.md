@@ -1,11 +1,13 @@
 ---
 title: "Quickstart Guide"
-layout: post
+layout: custom-post
 author:
   - Brittni Watkins
 date: 2026-07-30
-modified_date: 2026-08-08
+modified_date: 2026-10-22
 toc: true
+read_time: true
+description: "Quickstart guide for the p5.js TypeScript Template with webpack."
 ---
 
 ## System Requirements
@@ -76,8 +78,8 @@ For additional information about the software and tools discussed in this guide,
 ### Git and GitHub Resources
 
 - [GitHub Docs - Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
-- [Learn to Code, with Brittni Watkins - Create and Clone a GitHub Repository](https://blwatkins.github.io/learn-to-code/git/github/create-and-clone-repo.html)
+- [Learn to Code with Brittni - Create and Clone a GitHub Repository](https://blwatkins.github.io/learn-to-code/git/github/create-and-clone-repo.html)
 
 ### Unix Shell
 
-- [Learn to Code, with Brittni Watkins - How to Execute a Unix Shell Command](https://blwatkins.github.io/learn-to-code/unix/commands.html#how-to-execute-a-unix-shell-command)
+- [Learn to Code with Brittni - How to Execute a Unix Shell Command](https://blwatkins.github.io/learn-to-code/unix/commands.html#how-to-execute-a-unix-shell-command)
