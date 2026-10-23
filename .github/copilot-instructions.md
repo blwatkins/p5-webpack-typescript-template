@@ -108,7 +108,7 @@ All source files must include the MIT License copyright header at the top.
  * AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
  * FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- * 
+ *
  * SPDX-License-Identifier: MIT
  */
 ```
@@ -158,14 +158,14 @@ A page whose content did not change keeps its existing `modified_date`.
 ## Security and Dependency Management
 
 - Dependabot is configured for monthly updates to npm dependencies, GitHub Actions workflows, and Bundler dependencies under `docs/`.
-- See the [GitHub Actions CI](#github-actions-ci) table for CodeQL analysis scope and npm publish authentication details.
+- See the [GitHub Actions CI](#github-actions-ci) table for CodeQL analysis scope.
+- The package is marked `"private": true` and is not published to a registry; there is no publish workflow or registry authentication to maintain.
 
 ## Validation
 
 ### Validation Steps
 
-Run `npm ci`, then `npm run validate`, which runs lint, documentation generation, build, and tests in sequence.
-The documentation step is part of validation because TypeDoc is configured to treat warnings as errors, so an undocumented symbol or an unresolved link fails the run.
+Run `npm ci`, then `npm run validate`, which runs lint and build checks in sequence.
 See the ["npm Scripts" section](#npm-scripts) for details on each command.
 
 ### Link Verification
