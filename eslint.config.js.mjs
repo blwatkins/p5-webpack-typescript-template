@@ -47,10 +47,10 @@ export default defineConfig([
         extends: [
             eslint.configs.recommended,
             stylistic.configs.recommended,
-            esX.configs['flat/restrict-to-es2022']
+            esX.configs['flat/restrict-to-es2024']
         ],
         languageOptions: {
-            ecmaVersion: 2022,
+            ecmaVersion: 2024,
             sourceType: 'module',
             globals: {
                 ...globals.node
