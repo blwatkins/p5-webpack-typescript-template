@@ -26,9 +26,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7.0.1
       - name: Setup Ruby
-        uses: ruby/setup-ruby@v1.321.0
+        uses: ruby/setup-ruby@v1.327.0
         with:
-          bundler: 4.0.8
+          bundler: 4.0.16
           bundler-cache: true
           working-directory: docs
       - name: Setup Pages
@@ -54,4 +54,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5.0.0
+        uses: actions/deploy-pages@v5.0.1
