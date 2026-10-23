@@ -20,18 +20,30 @@ minima:
   hide_site_feed_link: true
   show_excerpts: false
   social_links:
+    - title: "GitHub Pages Home"
+      icon: house
+      icon_pack: regular
+      url: "https://blwatkins.github.io/"
+    - title: "Beehiiv Newsletter"
+      icon: envelope
+      icon_pack: regular
+      url: "https://brittniwatkins.beehiiv.com/"
     - title: "Source Code"
       icon: git-alt
+      icon_pack: brands
       url: "https://github.com/blwatkins/p5-webpack-typescript-template"
-    - title: "GitHub Pages"
-      icon: square-github
-      url: "https://blwatkins.github.io/"
     - title: GitHub
       icon: github
+      icon_pack: brands
       url: "https://github.com/blwatkins"
     - title: YouTube
       icon: youtube
+      icon_pack: brands
       url: "https://www.youtube.com/channel/UCeJ-huUU2AWP0z4-HWr1BXQ"
+    - title: Ko-fi
+      icon: ko-fi
+      icon_pack: brands
+      url: "https://ko-fi.com/brittniwatkins"
   nav_pages:
     - index.md
     - quickstart.md
