@@ -151,7 +151,7 @@ Use `.md` relative links within `docs/` source files; the build process will con
 
 ### Front Matter Dates
 
-Markdown pages that use `layout: post` with `date` and `modified_date` front matter render both values through `docs/_layouts/post.html` as "Published" and "Updated", respectively.
+Markdown pages that use `layout: custom-post` with `date` and `modified_date` front matter render both values through `docs/_layouts/custom-post.html` as "Published" and "Updated", respectively.
 When a branch changes the content of one of these pages, bump that page's `modified_date` to the commit date and leave the original `date` unchanged.
 A page whose content did not change keeps its existing `modified_date`.
 
