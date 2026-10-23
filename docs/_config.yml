@@ -32,9 +32,6 @@ minima:
     - title: YouTube
       icon: youtube
       url: "https://www.youtube.com/channel/UCeJ-huUU2AWP0z4-HWr1BXQ"
-    - title: LinkedIn
-      icon: linkedin
-      url: "https://www.linkedin.com/in/brittni-watkins/"
   nav_pages:
     - index.md
 
