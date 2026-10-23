@@ -16,7 +16,7 @@ A template project for using p5.js with TypeScript and webpack.
 The source code of this project is licensed under the [MIT License](https://opensource.org/license/mit).
 The full text of the license is included with the project source code.
 
-## Project Status Badges
+## Project Links and Status Badges
 
 ### [GitHub](https://github.com/blwatkins/p5-webpack-typescript-template)
 
@@ -38,7 +38,7 @@ The full text of the license is included with the project source code.
 
 ## Sources and Technical Notes
 
-- [Demonstrated Portfolio Skills](./portfolio-skills.md)
+- [Resources and References](./resources-and-references.md)
 
 ## Attributions
 
@@ -59,3 +59,6 @@ A huge thank you to all the open source contributors who have made this project 
 
 A special thank you to all the educators, mentors, and content creators who have shared their knowledge and expertise in the fields of algorithmic art, web development, and computer science.
 Thank you for giving me the tools, resources, opportunities, support, and inspiration to learn and grow as a developer.
+
+An extra thank you to [The Processing Foundation](https://processingfoundation.org/) and all the developers and contributors who have made [Processing](https://processing.org/) and [p5.js](https://p5js.org/) what they are today.
+This project would not exist without you.

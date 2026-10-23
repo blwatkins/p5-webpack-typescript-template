@@ -16,6 +16,8 @@
  * AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
  * FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * SPDX-License-Identifier: MIT
  */
 
 /* This configuration is designed to lint all TypeScript files in the project. */
@@ -55,13 +57,13 @@ export default defineConfig([
         extends: [
             eslint.configs.recommended,
             stylistic.configs.recommended,
-            esX.configs['flat/restrict-to-es2022'],
+            esX.configs['flat/restrict-to-es2024'],
             ...tsEslint.configs.recommendedTypeChecked,
             ...tsEslint.configs.strictTypeChecked,
             ...tsEslint.configs.stylisticTypeChecked
         ],
         languageOptions: {
-            ecmaVersion: 2022,
+            ecmaVersion: 2024,
             sourceType: 'module',
             parserOptions: {
                 projectService: true
@@ -114,8 +116,6 @@ export default defineConfig([
             'no-useless-assignment': 'error',
 
             'require-atomic-updates': 'error',
-
-            'require-await': 'error',
 
             'use-isnan': ['error', {
                 enforceForSwitchCase: true,
@@ -214,9 +214,14 @@ export default defineConfig([
             'no-useless-constructor': 'off',
             '@typescript-eslint/no-useless-constructor': 'error',
 
+            'require-await': 'off',
+            '@typescript-eslint/require-await': 'error',
+
             '@typescript-eslint/class-literal-property-style': ['error', 'getters'],
 
             '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+
+            '@typescript-eslint/no-deprecated': 'warn',
 
             '@typescript-eslint/no-dynamic-delete': 'error',
 

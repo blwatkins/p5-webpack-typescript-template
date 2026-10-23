@@ -14,9 +14,9 @@ node_modules/
 
 # Jekyll
 _site/
+.bundle/
 .jekyll-cache/
 .sass-cache/
-.bundle/
 vendor/
 
 # Compiling and bundling output

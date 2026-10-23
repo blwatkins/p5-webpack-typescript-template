@@ -58,6 +58,15 @@ updates:
     labels:
       - "dependencies"
       - "github actions"
+    groups:
+      github-actions-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      github-actions-dependencies-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
 
   - package-ecosystem: bundler
     directory: "/docs"
@@ -72,3 +81,12 @@ updates:
     labels:
       - "dependencies"
       - "ruby"
+    groups:
+      ruby-dependencies:
+        applies-to: version-updates
+        patterns:
+          - "*"
+      ruby-dependencies-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
