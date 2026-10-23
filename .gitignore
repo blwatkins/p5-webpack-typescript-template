@@ -17,7 +17,7 @@ _site/
 .bundle/
 .jekyll-cache/
 .sass-cache/
-.vendor/
+vendor/
 
 # Compiling and bundling output
 _compiled/
